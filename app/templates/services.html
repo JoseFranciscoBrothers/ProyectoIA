@@ -1,0 +1,84 @@
+{% extends './layout.html' %}
+
+{% block title %}{{data.titulo}}{% endblock %}
+
+{% block body %}
+<main>
+    <section class="technology">
+      <div class="container">
+        <h2>Prueba nuestras diferentes tecnologías</h2>
+        <p>Contamos con una variedad de potentes algoritmos que nos permiten ofrecerte soluciones financieras avanzadas y precisas. 
+            Nuestros algoritmos incluyen:</p>
+      </div>
+    </section>
+
+    <section class="finance">
+      <div class="container">
+        <a href="/apriori"><h2>Reglas de Asociación</h2></a>
+        <p>Utilizamos algoritmos de reglas de asociación para descubrir patrones y relaciones entre diferentes variables financieras. 
+            Esto nos ayuda a identificar conexiones significativas y ofrecerte recomendaciones basadas en asociaciones relevantes.</p>
+        <img src="static/images/GRAFO.png" alt="Imagen de tecnología" >
+      </div>
+    </section>
+
+    <section class="technology">
+        <div class="container">
+            <a href="/distance"><h2>Métricas de Distancia</h2></a>
+          <p> Las métricas de distancia nos permiten calcular la similitud o la diferencia entre diferentes elementos financieros. 
+            Utilizamos estas métricas para realizar análisis comparativos y evaluar el rendimiento de diferentes activos o estrategias de 
+            inversión.</p>
+            <img src="static/images/DIST.png" alt="Imagen de tecnología" >
+        </div>
+      </section>
+
+      <section class="finance">
+        <div class="container">
+            <a href="/clusteringjer"><h2>Clustering Jerárquico</h2></a>
+          <p>Aplicamos algoritmos de clustering para agrupar activos financieros similares en categorías o segmentos. Esto nos ayuda a 
+            entender mejor las características y comportamientos de los activos, lo que a su vez nos permite ofrecerte recomendaciones 
+            más específicas y personalizadas.</p>
+            <img src="static/images/PART.png" alt="Imagen de tecnología" >
+        </div>
+      </section>
+
+      <section class="technology">
+        <div class="container">
+            <a href="/clusteringpar"><h2>Clustering Particional</h2></a>
+          <p>Aplicamos algoritmos de clustering para agrupar activos financieros similares en categorías o segmentos. Esto nos ayuda a 
+            entender mejor las características y comportamientos de los activos, lo que a su vez nos permite ofrecerte recomendaciones 
+            más específicas y personalizadas.</p>
+            <img src="static/images/KMEAN.png" alt="Imagen de tecnología" >
+        </div>
+      </section>
+
+      <section class="finance">
+        <div class="container">
+            <a href="/logclas"><h2>Clasificación Logística</h2></a>
+          <p> La clasificación logística es una técnica que utilizamos para predecir la probabilidad de un evento o resultado financiero 
+            específico. Utilizamos este algoritmo para evaluar y predecir el desempeño futuro de diferentes inversiones o activos.</p>
+        <img src="static/images/CLASLOG.png" alt="Imagen de tecnología" >
+        </div>
+      </section>
+
+      <section class="technology">
+        <div class="container">
+          <a href="/regtree"><h2>Árboles Aleatorios</h2></a>
+          <p> Los árboles de regresión son modelos de aprendizaje automático que utilizamos para predecir valores numéricos basados 
+            en múltiples variables financieras. Estos algoritmos nos ayudan a analizar y pronosticar diferentes resultados financieros, 
+            como el rendimiento de una inversión en función de variables clave.</p>
+            <img src="static/images/REGT.png" alt="Imagen de tecnología" >
+        </div>
+      </section>
+
+      <section class="finance">
+        <div class="container">
+            <a href="/forest"><h2>Bosques Aleatorios</h2></a>
+          <p> Los Bosques Aleaotios son modelos de aprendizaje automático que utilizamos para predecir valores numéricos basados 
+            en múltiples variables. Estos algoritmos nos ayudan a analizar y pronosticar diferentes resultados, 
+            como el rendimiento de una inversión en función de variables clave. Estos son mucho más potentes que los Árboles, pues funcionan mediante 
+            una gran cantidad de Ärboles Áleatorios, los cuales logran disminuir el error presente en un solo Árbol.</p>
+            <img src="static/images/FOREST.png" alt="Imagen de tecnología" >
+        </div>
+      </section>
+  </main>
+{% endblock %}

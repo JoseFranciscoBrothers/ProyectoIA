@@ -1,0 +1,35 @@
+{% extends './layout.html' %}
+
+{% block title %}{{data.titulo}}{% endblock %}
+
+{% block body %}
+<main>
+    <section class="technology">
+      <div class="container">
+        <h2>Tecnología</h2>
+        <p>Nuestra tecnología utiliza inteligencia artificial para ofrecerte recomendaciones personalizadas 
+            y precisas en tus inversiones. Con algoritmos avanzados y análisis de datos, 
+            nuestra plataforma te ayuda a tomar decisiones informadas y maximizar tus resultados. 
+            Accede a herramientas interactivas y mejora tu estrategia de inversión. 
+            Descubre cómo nuestra tecnología te impulsa hacia el éxito financiero.</p>
+  
+        <img src="static/images/TECIMAGE.jpg" alt="Imagen de tecnología">
+      </div>
+    </section>
+
+    <section class="finance">
+      <div class="container">
+        <h2>Finanzas</h2>
+        <p>Nuestra página web se conecta con diversas APIs financieras líderes, como Google Finance y Yahoo Finance, 
+            para recopilar y analizar datos actualizados sobre mercados, acciones, divisas y más. 
+            Al utilizar estas fuentes confiables de información, nuestra plataforma garantiza que obtengas datos precisos para respaldar
+             tus decisiones de inversión. Con acceso a una amplia gama de datos financieros y herramientas analíticas, 
+             nuestra página web te brinda una perspectiva integral y fundamentada para ayudarte a optimizar tus estrategias 
+             financieras y alcanzar tus objetivos de inversión con mayor confianza.</p>
+        <p>Destacamos nuestro servicio de <span class="highlight">asesoría financiera</span> para ayudarte a alcanzar
+          tus
+          metas.</p>
+      </div>
+    </section>
+  </main>
+{% endblock %}

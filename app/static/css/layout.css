@@ -1,0 +1,329 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 0px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Navegación */
+  nav {
+    margin-top: 0px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  /* Sección principal */
+  main {
+    margin-top: 0px;
+  }
+  
+  section {
+    margin-bottom: 0px;
+  }
+  
+  section h2 {
+    color: #333;
+  }
+  
+  section p {
+    color: #777;
+  }
+  
+  /* Estilo de tecnología */
+  .technology {
+    background-color: #f2f2f2;
+    padding: 0px;
+  }
+  
+  .technology h3 {
+    color: #333;
+  }
+  
+  .technology p {
+    color: #777;
+  }
+  
+  .technology img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin:  auto;
+  }
+  
+  .finance img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin:  auto;
+  }
+  /* Estilo financiero */
+  .finance {
+    background-color: #fff;
+    padding: 0px;
+  }
+  
+  .finance h3 {
+    color: #333;
+  }
+  
+  .finance p {
+    color: #777;
+  }
+  
+  .finance .highlight {
+    color: #0099ff;
+    font-weight: bold;
+  }
+  
+  /* Pie de página */
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  /* Estilos generales */
+select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  color: #333;
+  width: 200px;
+}
+
+/* Estilos al seleccionar */
+select:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+/* Estilos de opción seleccionada */
+select option:checked {
+  background-color: #66afe9;
+  color: #fff;
+}
+
+/* Estilos de opción al pasar el cursor */
+select option:hover {
+  background-color: #ebebeb;
+  color: #333;
+}
+
+/* Estilos generales */
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #66afe9;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Estilos al pasar el cursor */
+button:hover {
+  background-color: #449dd1;
+}
+
+/* Estilos al hacer clic */
+button:active {
+  background-color: #337ab7;
+  box-shadow: none;
+}
+
+/* Estilos cuando está deshabilitado */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Estilos al enfocar */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+
+input[type="file"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  color: #333;
+ 
+}
+
+input[type="file"]:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 10px;
+  background-color: #66afe9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #449dd1;
+}
+
+input[type="file"]::file-selector-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+
+
+
+input[type="range"] {
+  width: 100%;
+  height: 10px;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #66afe9;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #449dd1;
+}
+
+input[type="range"]::-webkit-slider-thumb:focus {
+  outline: none;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #66afe9;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background-color: #449dd1;
+}
+
+input[type="range"]::-moz-range-thumb:focus {
+  outline: none;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+input[type="range"]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #66afe9;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb:hover {
+  background-color: #449dd1;
+}
+
+input[type="range"]::-ms-thumb:focus {
+  outline: none;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #66afe9;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+tr:hover {
+  background-color: #ebebeb;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  color: #333;
+  width: 200px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+

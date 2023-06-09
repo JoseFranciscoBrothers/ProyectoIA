@@ -1,0 +1,53 @@
+{% extends './layout.html' %}
+
+{% block title %}{{data.titulo}}{% endblock %}
+
+{% block body %}
+
+<main>
+  <section class="technology">
+    <div class="container">
+    <h2>Contacto</h2>
+    <p>¡Nos encantaría saber de ti! Completa el formulario o utiliza los datos de contacto a continuación para comunicarte con nosotros.</p>
+   
+    <form action="/addcontact" method="POST">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" name="fullname" placeholder="Fullname">
+        </div>
+
+        <div class="form-group">
+          <label for="phones">Telefono:</label>
+          <input type="text"  name="phone" placeholder="Phone" >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" name="email" placeholder="Email" >
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea type="text" name="message" ></textarea>
+        </div>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </div>
+
+
+    <section class="finance">
+      <div class="container">
+    <div class="datos-contacto">
+      <h3>Información de contacto</h3>
+      <p><strong>Dirección:</strong> Calle Ezequiel Ordoñez #24, Ciudad de México, México</p>
+      <p><strong>Teléfono:</strong> +52 755-121-4050</p>
+      <p><strong>Teléfono:</strong> +52 55-7197-4050</p>
+      <p><strong>Correo electrónico:</strong> jfbrothers42@gmail.com</p>
+      <p><strong>Correo electrónico:</strong> osva4ld000@gmail.com</p>
+    </div>
+  </div>
+</section>
+</main>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends './layout.html' %}
+
+{% block title %}{{data.titulo}}{% endblock %}
+
+
+{% block body %}
+<head>
+
+
+    
+    <style>
+        .plot{
+    width: 100%;
+    height: auto;
+    margin:  auto;
+        }
+
+
+    </style>
+</head>
+<main>
+    <section class="technology">
+        <div class="container">
+            <div>
+                <h2>{{data.titulo}}</h2>
+            </div>
+
+            <form action="/showjerclust" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <div>
+                    <label>Selecciona la estandarización: </label>
+                    <select id="selectest" name="selectest" >
+                        <option value="0">MinMax</option>
+                        <option value="1">Standard</option>
+                    </select>
+                </div>
+
+
+                <div><p style="color:#f2f2f2;font-size:1px;">.</p>  </div>
+                <div><p style="color:#f2f2f2;font-size:1px;">.</p>  </div>
+                <div><p style="color:#f2f2f2;font-size:1px;">.</p>  </div>
+                <div><p style="color:#f2f2f2;font-size:1px;">.</p>  </div>
+                <div><p style="color:#f2f2f2;font-size:1px;">.</p>  </div>
+                <div><p style="color:#f2f2f2;font-size:1px;">.</p>  </div>
+
+                <div>
+                    <label>Selecciona el tipo de distancia: </label>
+                    <select id="typedist" name="typedist"  >
+                        <option value="0">Euclideana</option>
+                        <option value="1">Chebyshev</option>
+                        <option value="2">Manhattan</option>
+                    </select>
+                </div>
+
+                <button type="submit" id='send' class="d-none">Enviar</button>
+                </div>
+            </form>
+
+</div>
+</section>
+
+
+</main>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends './layout.html' %}
+
+{% block title %}{{data.titulo}}{% endblock %}
+
+{% block body %}
+<head>
+
+
+    
+    <style>
+        .plot{
+    width: 100%;
+    height: auto;
+    margin:  auto;
+        }
+
+
+    </style>
+</head>
+<main>
+    <section class="technology">
+        <div class="container">
+            <div>
+                <h2>{{data.titulo}}</h2>
+            </div>
+
+            <form action='/finaljerclust' method="POST">
+                <div class="form-group">
+
+
+                <label for="numero">Número de clusters:</label>
+
+                <input type="text" id="num" name="num" required minlength="1" maxlength="3" size="10">
+
+                    <div>
+                     <button type="submit" id='send' >Enviar</button>
+                    </div>
+                 </div>
+            </form>
+        
+            
+
+    </section>
+    <img src={{plot_url}} alt="No se puede desplegar la gráfica" class ="plot">
+
+</main>
+{% endblock %}

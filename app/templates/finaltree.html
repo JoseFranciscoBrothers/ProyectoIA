@@ -1,0 +1,34 @@
+{% extends './layout.html' %}
+
+{% block title %}{{data.titulo}}{% endblock %}
+
+{% block body %}
+<head>
+
+
+    
+    <style>
+        .plot{
+    width: 100%;
+    height: auto;
+    margin:  auto;
+        }
+
+
+    </style>
+</head>
+<main>
+    <section class="finance">
+        <div class="container">
+            <div>
+                <h2>{{data.titulo}}</h2>
+            </div>
+            <h3>Se predijo que el resultado es: {{pred}}</h3>
+  
+        </div>
+
+    </section>
+
+
+</main>
+{% endblock %}

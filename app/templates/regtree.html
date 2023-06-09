@@ -1,0 +1,58 @@
+{% extends './layout.html' %}
+
+{% block title %}{{data.titulo}}{% endblock %}
+
+{% block body %}
+<head>
+    <style>
+        .d-none{
+            display: none;
+        }
+    </style>
+    <script>
+    function enableBut(answer){
+        var sendButton = document.getElementById('send');
+
+        if(answer.value == 0) {
+            sendButton.classList.add('d-none');
+        } else {
+            sendButton.classList.remove('d-none');
+        }
+    }
+
+    function enablecsv(answer){
+        var sendcsv = document.getElementById('csvdata');
+
+        if(answer.value == 0 || answer.value == 2 || answer.value == 3) {
+            sendcsv.classList.add('d-none');
+        } else {
+            sendcsv.classList.remove('d-none');
+        }
+    }
+</script>
+</head>
+<main>
+    <section class="technology">
+        <div class="container">
+            <div class="datos-contacto">
+                <h2>{{data.titulo}}</h2>
+            </div>
+            <form action="/getregtree" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Selecciona el dataset: </label>
+                    <select id="selectclust" name="selectclust" onchange="enableBut(this); enablecsv(this);" >
+                        <option value="0">Selecciona una opción</option>
+                        <option value="1">Ingresar dataset</option>
+                        <option value="2">hipoteca</option>
+                        <option value="3">diabetes</option>
+                    </select>
+                
+                <input type="file" id="csvdata" name="csvdata" class="d-none" accept=".csv">
+                <button type="submit" id='send' class="d-none">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

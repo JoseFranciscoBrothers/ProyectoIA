@@ -1,0 +1,109 @@
+{% extends './layout.html' %}
+
+{% block title %}{{data.titulo}}{% endblock %}
+
+{% block body %}
+
+<main>
+    <section class="technology">
+        <div class="container">
+            <div>
+                <h2>{{data.titulo}}</h2>
+            </div>
+            <div>
+            <h3>El modelo cuenta con una precisión del: {{acc}}%</h3>
+        </div>
+    <div>
+        <table>
+            <tr>
+                {% for row in headings%}
+                <tr>
+                {% for cell in row%}
+                <td>{{cell}}</td>
+                {% endfor %}
+                </tr>
+                {% endfor %}
+
+            </tr>
+            <tr>
+                {% for row in table%}
+                <tr>
+                {% for cell in row%}
+                <td>{{cell}}</td>
+                {% endfor %}
+                </tr>
+                {% endfor %}
+
+            </tr>
+
+        </table>
+    </div>
+</section>
+
+<section class="finance">
+    <div class="container">
+
+<div>
+        <table>
+            <tr>
+                {% for header in headings2 %}
+                <th>{{header}}</th>
+                {% endfor %}
+                </tr>
+            <tr>
+                {% for row in table2%}
+                <tr>
+                {% for cell in row%}
+                <td>{{cell}}</td>
+                {% endfor %}
+                </tr>
+                {% endfor %}
+
+            </tr>
+
+        </table>
+    </div>
+</div>
+    </section>
+
+    <section class="technology">
+        <div class="container">
+             
+            <h3>Ingresa tus datos para pronosticar</h3>
+
+            <form action='/finaltree' method="POST">
+                <div class="form-group">
+                    {% for i in range(length) %}
+                    <div>
+                    {{datos[i]}}
+                    <input type="text" id={{datos[i]}} name={{datos[i]}} required minlength="1" size="10"> 
+                    </div>
+                    {% endfor %}
+                
+                <div>
+                    <button type="submit" id='send' >Enviar</button>
+                   </div>
+                </div>
+           </form>
+
+
+
+        </div>
+        </section>
+
+    <section class="finance">
+        <div class="container">
+             
+             
+            {% for line in reporte %}
+            <p>{{line}}</p>
+            {% endfor %}
+
+
+        </div>
+        </section>
+    
+
+
+</main>
+{% endblock %}
